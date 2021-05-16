@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- meta tags comes first -->
+<meta charset="utf-8"/>
+<meta name="viewport" content="width-device-width, initial-scale=1"/>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+
+<!-- Additional CSS must be placed after Bootstrap CSS -->
+<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+<link rel="stylesheet" href="css/styles.css" type="text/css"/>
+
+<title>Borrowsome</title>
+</head>
+<body>
+<!-- Header -->
+<header class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <div class="row">
+                <div class="col-4-sm col-sm-3 col-md-2 align-self-center">
+                    <!-- <img src="img/logo.png" class="image-fluid"> -->
+                </div>
+                <div class="col">
+                        <h1>Borrowsome</h1>
+                    <!-- <h2>A better way to rent</h2> -->
+                </div>
+                <div class="col-md-4 col-xl-2 mt-4">
+                        <a class="btn btn-info btn-lg" role="button" data-target="#reserveModal" data-toggle="modal">Reserve your item.</a>
+                </div>
+        </div>
+    </div>
+</header>
+<!-- Reserve your item / Modal -->
+<div id="reserveModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-info text-white">
+                <h3 class="modal-title">Reserve your item</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <form>
+                        <div class="form-group row">
+                            <label for="numberGuest" class="col-sm-6 col-form-label">Number of Campers</label>
+                                <div class="col-sm-6">
+                                    <select class="col-sm form-control" name="numcampers" id="numCampers">
+                                        <option>Select days</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                    </select>
+                                </div>
+                        </div>
+                            <div class="form-group row">
+                            <label class="col-sm-6 col-form-label" for="date">Date</label>
+                            <div class="col-sm-6">
+                                <input class="col form-control" type="date" id="date" name="date" placeholder="mm/dd/yyy">
+                            </div> 
+                                <div class="form-group-row">
+                                    <label class="col-sm-6 col-form-label" >Campsite Type</label>
+                                    <div class="col-2 btn-group btn-group-toggle " data-toggle="buttons">
+                                        <label class="btn btn-success">
+                                            <input type="radio" name="siteType" id="siteTent">Tent</input>
+                                        </label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="siteType" id="siteRv">RV</input>
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-group row">
+                            <div class="col">
+                                <button data-dismiss="modal" class="btn btn-secondary" type="button">Cancel</button>
+                                <button class="btn btn-primary" type="submit" value="input">Search</button>
+
+                            </div>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- connect pack json and bootstrap -->
+
+
+
+
+<!-- Footer -->
+<footer>
+
+
+</footer>
+<!-- jQuery must come first, then popper.js, then the Bootstrap Javascript plugins -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
