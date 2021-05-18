@@ -26,15 +26,15 @@
                 </div>
                 <div class="col">
                         <h1>Borrowsome</h1>
-                    <h5>Peer to Peer Lending Platform</h5>
+                    <p>Peer to Peer Lending Platform</p>
                 </div>
                 <div class="col-md-4 col-xl-2 mt-4">
-                        <a class="btn btn-info btn-lg" role="button" data-target="#reserveModal" data-toggle="modal">Reserve your item</a>
+                        <a class="btn btn-info btn-lg" role="button" data-target="#reserveModal" data-toggle="modal">Items Available</a>
                 </div>
         </div>
     </div>
 </header>
-<!-- Reserve your item / Modal -->
+<!-- Reserve your item / Modal lets you see the items available and reserve when you want to pick them up.  -->
 <div id="reserveModal" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -80,7 +80,7 @@
                             <div class="form-group row">
                             <div class="col">
                                 <button data-dismiss="modal" class="btn btn-secondary" type="button">Cancel</button>
-                                <button class="btn btn-primary" type="submit" value="input">Search</button>
+                                <button class="btn btn-info" type="submit" value="input">Search</button>
 
                             </div>
                             </div>
@@ -90,14 +90,23 @@
         </div>
     </div>
 </div>
-
+<!-- Top Nav Bar -->
 
 
 
 
 <!-- Footer -->
 <footer>
-
+    <!-- This NavBar will find the item with either a itemName or a serialNum -->
+    <nav class="navbar fixed-bottom navbar-light bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white">Can I help you find your item?</a>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Name or serial number" aria-label="Search">
+              <button class="btn btn-dark" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
 
 </footer>
 <!-- jQuery must come first, then popper.js, then the Bootstrap Javascript plugins -->
