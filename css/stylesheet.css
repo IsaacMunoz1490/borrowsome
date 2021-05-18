@@ -20,13 +20,13 @@ header h2 {
 }
 .jumbotron {
     margin: 0;
-    padding: 30px;
+    padding: 10px;
     background-image: linear-gradient(to right, #062975, #1268af, #7691dd);
     color: white;
 }
 
 .row-content {
-    padding: 50px 0;
+    padding: 30px 0;
     border-bottom: 0;
     min-height: 200px;
 }

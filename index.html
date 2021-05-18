@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
 <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-<link rel="stylesheet" href="css/styles.css" type="text/css"/>
+<link rel="stylesheet" href="css/stylessheet.css" type="text/css"/>
 
 <title>Borrowsome</title>
 </head>
@@ -21,15 +21,15 @@
 <header class="jumbotron jumbotron-fluid">
     <div class="container">
         <div class="row">
-                <div class="col-4-sm col-sm-3 col-md-2 align-self-center">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
                     <!-- <img src="img/logo.png" class="image-fluid"> -->
                 </div>
                 <div class="col">
                         <h1>Borrowsome</h1>
-                    <!-- <h2>A better way to rent</h2> -->
+                    <h5>Peer to Peer Lending Platform</h5>
                 </div>
                 <div class="col-md-4 col-xl-2 mt-4">
-                        <a class="btn btn-info btn-lg" role="button" data-target="#reserveModal" data-toggle="modal">Reserve your item.</a>
+                        <a class="btn btn-info btn-lg" role="button" data-target="#reserveModal" data-toggle="modal">Reserve your item</a>
                 </div>
         </div>
     </div>
@@ -46,9 +46,9 @@
                 <div class="container-fluid">
                     <form>
                         <div class="form-group row">
-                            <label for="numberGuest" class="col-sm-6 col-form-label">Number of Campers</label>
+                            <label for="numberGuest" class="col-sm-6 col-form-label">Number of Days</label>
                                 <div class="col-sm-6">
-                                    <select class="col-sm form-control" name="numcampers" id="numCampers">
+                                    <select class="col-sm form-control" name="numDays" id="numOfDays">
                                         <option>Select days</option>
                                         <option>1</option>
                                         <option>2</option>
@@ -65,13 +65,13 @@
                                 <input class="col form-control" type="date" id="date" name="date" placeholder="mm/dd/yyy">
                             </div> 
                                 <div class="form-group-row">
-                                    <label class="col-sm-6 col-form-label" >Campsite Type</label>
+                                    <label class="col-sm-6 col-form-label" >Choose One</label>
                                     <div class="col-2 btn-group btn-group-toggle " data-toggle="buttons">
                                         <label class="btn btn-success">
-                                            <input type="radio" name="siteType" id="siteTent">Tent</input>
+                                            <input type="radio" name="siteType" id="sitePickUp">Pick Up</input>
                                         </label>
                                         <label class="btn btn-primary">
-                                            <input type="radio" name="siteType" id="siteRv">RV</input>
+                                            <input type="radio" name="siteType" id="siteDeliver">Delivery</input>
                                         </label>
                                     </div>
                                 </div>
@@ -90,7 +90,7 @@
         </div>
     </div>
 </div>
-<!-- connect pack json and bootstrap -->
+
 
 
 
