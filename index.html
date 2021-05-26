@@ -3,7 +3,7 @@
 <head>
 <!-- meta tags comes first -->
 <meta charset="utf-8"/>
-<meta name="viewport" content="width-device-width, initial-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
@@ -25,11 +25,11 @@
                     <!-- <img src="img/logo.png" class="image-fluid"> -->
                 </div>
                 <div class="col">
-                        <h1>Borrowsome</h1>
+                        <h1><strong>Borrowsome</strong></h1>
                     <p>Peer to Peer Lending Platform</p>
                 </div>
                 <div class="col-md-4 col-xl-2 mt-4">
-                        <a class="btn btn-light btn-outline-dark btn-lg" role="button" data-target="#reserveModal" data-toggle="modal">Items Available</a>
+                        <a class="btn btn-light btn-outline-dark btn-md" role="button" data-target="#reserveModal" data-toggle="modal">Items Available</a>
                 </div>
         </div>
     </div>
@@ -56,6 +56,7 @@
                                         <option>4</option>
                                         <option>5</option>
                                         <option>6</option>
+                                        <option>7</option>
                                     </select>
                                 </div>
                         </div>
@@ -102,7 +103,6 @@
                 <ul class="navbar-nav">
                     <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li> -->
                     <li class="nav-item "><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
                     <span class="navbar-text ml-auto">
@@ -149,11 +149,176 @@
         </div>
     </div>
 </div>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">Home</li>
+    </ol>
+  </nav>
+<!-- Product Images -->
+<main>
+<div class="album py-3 bg-light ">
+      <div class="container">
+  
+        <div class="row row-cols-1 row-col-sm-2 row-cols-md-3 lg-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="img/taladro.jpeg" role="img" focusable="false">
+  
+              <div class="card-body">
+                <p class="card-text"> Electric Drill </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" id="pickUp">Pick-up</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" id="dropOff">Drop-off</button>
+                  </div>
+                  <small class="text-muted">Available in 9 days</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="img/set.jpg" role="img" focusable="false">
+  
+              <div class="card-body">
+                <p class="card-text"> Powertool 50 Piece Set</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" id="pickUp">Pick-up</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" id="dropOff">Drop-off</button>
+                  </div>
+                  <small class="text-muted">Available in 3 days</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="img/sander.jpeg" role="img" focusable="false">
+  
+              <div class="card-body">
+                <p class="card-text"> Electric Sander</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" id="pickUp">Pick-up</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" id="dropOff">Drop-off</button>
+                  </div>
+                  <small class="text-muted">Available in 6 days</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="img/grassblower.jpg" role="img" focusable="false">
+  
+              <div class="card-body">
+                <p class="card-text"> Power Grass Blower</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" id="pickUp">Pick-up</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" id="dropOff">Drop-off</button>
+                  </div>
+                  <small class="text-muted">Available today </small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="img/tent.jpg" role="img" focusable="false">
+  
+              <div class="card-body">
+                <p class="card-text"> Tent </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" id="pickUp">Pick-up</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" id="dropOff">Drop-off</button>
+                  </div>
+                  <small class="text-muted">Available tomorrow</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="img/twosleeps.jpg" role="img" focusable="false">
+  
+              <div class="card-body">
+                <p class="card-text"> Queen Size Tent</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" id="pickUp">Pick-up</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" id="dropOff">Drop-off</button>
+                  </div>
+                  <small class="text-muted">Available in 19 days</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="img/nokia.jpeg" role="img" focusable="false">
+  
+              <div class="card-body">
+                <p class="card-text"> Nokia Laptop i7 </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" id="pickUp">Pick-up</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" id="dropOff">Drop-off</button>
+                  </div>
+                  <small class="text-muted">Available in 1 hour</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="img/drill.jpeg" role="img" focusable="false">
+  
+              <div class="card-body">
+                <p class="card-text"> Heavy Duty Drill</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" id="pickUp">Pick-up</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" id="dropOff">Drop-off</button>
+                  </div>
+                  <small class="text-muted">Available in 30 days</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="img/sleepingbag.jpg" role="img" focusable="false">
+  
+              <div class="card-body">
+                <p class="card-text"> Kid Size Tent</p>
+                 <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" id="pickUp">Pick-up</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" id="dropOff">Drop-off</button>
+                  </div>
+                  <small class="text-muted">Available today</small>
+                 </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+</main>
+<!-- test -->
+<button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
 
+<!-- Images and Functionality -->
 <!-- Footer -->
 <footer>
     <!-- This NavBar will find the item with either a itemName or a serialNum -->
-    <nav class="navbar fixed-bottom navbar-light bg-info">
+    <nav class="navbar fixed-bottom navbar-light bg-info position-static">
         <div class="container-fluid">
             <a class="navbar-brand text-white">Can I help you find your item?</a>
             <form class="d-flex">
