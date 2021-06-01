@@ -35,3 +35,6 @@ a , a:hover {
 h5 {
     color: linear-gradient( top, rgb(53, 108, 209), blue, black);
 }
+#smText{
+  margin-left: 15px;
+}
